@@ -1,33 +1,388 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .App {
-  text-align: center;
+    background: #F2F2F2;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    width: 818px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header {
+    display: flex;
+    justify-content: center;
+    height: 160px;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-container {
+    display: flex;
+    width: 100%;
+}
+
+.menu {
+    width: 232px;
+    height: 331px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(91, 137, 164, 0.25);
+    border-radius: 5px;
+}
+
+.currency-selection {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 19px;
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+    color: #4A4A4A;
+    margin: 15px 15px 0 15px;
+}
+
+.currency-selection button {
+    width: 67px;
+    height: 40px;
+    margin-top: 11px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #2196F3;
+    background: #FFFFFF;
+    border: 1px solid #D2D5D6;
+    box-sizing: border-box;
+    border-radius: 0px 5px 5px 0px;
+    outline: none;
+    transition: 200ms;
+}
+
+.currency-selection button:nth-child(1) {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.currency-selection button:nth-child(2) {
+    border-radius: 0;
+}
+
+.currency-selection button:hover {
+    background: #F2FCFF;
+    border: 1px solid #64B5F5;
+    cursor: pointer;
+}
+
+.selected {
+    background: #2196F3 !important;
+    border: 1px solid #2196F3 !important;
+    color: #FFFFFF !important;
+    transition: 150ms;
+}
+
+.filter {
+    margin-top: 30px;
+}
+
+.filter p {
+    margin: 0 0 0 15px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 19px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    color: #4A4A4A;
+
+}
+
+.checkboxes {
+    width: 100%;
+    margin-top: 9px;
+}
+
+.checkboxes input {
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkboxes input + label {
+    height: 36px;
+    width: 169px;
+    display: inline-block;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 35px;
+    color: #4A4A4A;
+    position: relative;
+    padding: 0 0 0 45px;
+    cursor: pointer;
+}
+
+.checkboxes input + label:before {
+    content: '';
+    position: absolute;
+    top: 5.7px;
+    left: 15px;
+    width: 19px;
+    height: 19px;
+    background: #FFFFFF;
+    border: 1px solid #D2D5D6;
+    border-radius: 3px;
+    transition: 50ms;
+}
+
+.checkboxes input + label:after {
+    content: '';
+    background-image: url("./img/check-mark.png");
+    position: absolute;
+    visibility: hidden;
+    top: 12.7px;
+    left: 21px;
+    width: 9px;
+    height: 7px;
+    transition: 50ms;
+}
+
+.checkboxes input:checked + label:before {
+    transition: 100ms;
+    background: #F2FCFF;
+    border: 1px solid #2196F3;
+}
+
+.checkboxes input:checked + label:after {
+    transition: 100ms;
+    visibility: visible;
+}
+
+.checkboxes label {
+    display: inline;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 35px;
+    color: #4A4A4A;
+}
+
+.only {
+    float: right;
+    height: 100%;
+    margin-right: 15px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 35px;
+    border: none;
+    background: none;
+    outline: none;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 0.5px;
+    color: #2196F3;
+    visibility: hidden;
+}
+
+.checkboxes div:hover {
+    background: #F1FCFF;
+}
+
+.checkboxes div:hover  .only{
+    visibility: visible;
+    cursor: pointer;
+}
+
+.ticketsList {
+    margin-left: 3.6%;
+}
+
+.ticket {
+    width: 556px;
+    height: 161px;
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(91, 137, 164, 0.25);
+    border-radius: 5px;
+}
+
+ul li {
+    margin-bottom: 20px;
+}
+
+ul li:last-child {
+    margin-bottom: 0;
+}
+
+.left-container {
+    flex: 1.13;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.right-container {
+    flex: 2;
+    height: 98px;
+    display: flex;
+}
+
+.logo {
+    width: 120px;
+    height: 35px;
+}
+
+.left-container button {
+    width: 160px;
+    height: 56px;
+    background: #FF6D00;
+    border-radius: 5px;
+    font-family: Open Sans, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 6px 38px;
+    outline: none;
+}
+
+.vertical-line {
+    background: #ECEFF1;
+    width: 1px;
+    height: 100%;
+}
+
+.from {
+    margin-top: 26px;
+    margin-left: 25px;
+}
+
+.from .time {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 26px;
+    color: #4A4A4A;
+}
+
+.from .city {
+    margin-top: 10px;
+    margin-left: 5px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #4A4A4A;
+}
+
+
+.from .date {
+    margin-top: 0;
+    margin-left: 5px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #646464;
+}
+
+.flight {
+    position: relative;
+    left: -8px;
+    margin-top: 27px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #8B9497;
+}
+
+.horizontal-line {
+    margin-top: 9px;
+    width: 96px;
+    height: 1px;
+    background: #D2D5D6;
+}
+
+.flight img {
+    position: relative;
+    top: -7px;
+    left: 56px;
+}
+
+.to {
+    flex: 1;
+    margin-top: 26px;
+    margin-right: 20px;
+}
+
+.to .time {
+    float: right;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 26px;
+    color: #4A4A4A;
+}
+
+.to .city {
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #4A4A4A;
+}
+
+
+.to .date {
+    float: right;
+    margin-top: 0;
+    margin-right: 5px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #646464;
+}
+
+footer {
+    width: 100%;
+    height: 150px;
 }
