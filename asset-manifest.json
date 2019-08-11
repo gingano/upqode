@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/upqode/static/css/main.8412c985.chunk.css",
+    "main.js": "/upqode/static/js/main.e3b189c6.chunk.js",
+    "main.js.map": "/upqode/static/js/main.e3b189c6.chunk.js.map",
+    "runtime~main.js": "/upqode/static/js/runtime~main.37ac49f0.js",
+    "runtime~main.js.map": "/upqode/static/js/runtime~main.37ac49f0.js.map",
+    "static/js/2.937242f7.chunk.js": "/upqode/static/js/2.937242f7.chunk.js",
+    "static/js/2.937242f7.chunk.js.map": "/upqode/static/js/2.937242f7.chunk.js.map",
+    "index.html": "/upqode/index.html",
+    "precache-manifest.0567192171c72946408c0e2f32497161.js": "/upqode/precache-manifest.0567192171c72946408c0e2f32497161.js",
+    "service-worker.js": "/upqode/service-worker.js",
+    "static/css/main.8412c985.chunk.css.map": "/upqode/static/css/main.8412c985.chunk.css.map",
+    "static/media/Turkish-Airlines-Logo.png": "/upqode/static/media/Turkish-Airlines-Logo.6dd5ee67.png",
+    "static/media/airplane.svg": "/upqode/static/media/airplane.3e607416.svg",
+    "static/media/logo.svg": "/upqode/static/media/logo.c82fe072.svg"
+  }
+}
