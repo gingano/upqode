@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/Menu.css'
 import { connect } from 'react-redux'
 
 function Menu({

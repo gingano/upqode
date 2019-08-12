@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/TicketsList.css'
 import {connect} from 'react-redux'
 import Ticket from './Ticket'
 

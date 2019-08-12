@@ -1,0 +1,21 @@
+.ticketsList {
+    margin-left: 3.6%;
+}
+
+@media (max-width: 818px) {
+    .ticketsList {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 566px) {
+    .ticketsList {
+        width: 95%;
+    }
+
+    .ticketsList ul {
+        width: 100%;
+    }
+}

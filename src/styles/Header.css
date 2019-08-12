@@ -1,0 +1,12 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+}
+
+header .logo {
+    background-image: url('../img/logo.svg');
+    width: 82px;
+    height: 90px;
+}

@@ -1,0 +1,248 @@
+.ticket {
+    width: 556px;
+    height: 161px;
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(91, 137, 164, 0.25);
+    border-radius: 5px;
+}
+
+ul li {
+    margin-bottom: 20px;
+}
+
+ul li:last-child {
+    margin-bottom: 0;
+}
+
+.left-container {
+    flex: 1.13;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.right-container {
+    flex: 2;
+    height: 98px;
+    display: flex;
+}
+
+.company-logo {
+    width: 120px;
+    height: 35px;
+    background-image: url('../img/Turkish-Airlines-Logo.png');
+}
+
+.left-container button {
+    width: 160px;
+    height: 56px;
+    background: #FF6D00;
+    border: 1px solid #FF6D00;
+    border-radius: 5px;
+    font-family: Open Sans, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 6px 38px;
+    outline: none;
+}
+
+.vertical-line {
+    background: #ECEFF1;
+    width: 1px;
+    height: 100%;
+}
+
+.from {
+    margin-top: 26px;
+    margin-left: 25px;
+}
+
+.from .time {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 26px;
+    color: #4A4A4A;
+}
+
+.from .city {
+    margin-top: 10px;
+    margin-left: 5px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #4A4A4A;
+}
+
+
+.from .date {
+    margin-top: 0;
+    margin-left: 5px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #646464;
+}
+
+.flight {
+    position: relative;
+    left: -8px;
+    margin-top: 27px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #8B9497;
+}
+
+.horizontal-line {
+    margin-top: 9px;
+    width: 96px;
+    height: 1px;
+    background: #D2D5D6;
+}
+
+.flight img {
+    position: relative;
+    top: -7px;
+    left: 56px;
+}
+
+.to {
+    flex: 1;
+    margin-top: 26px;
+    margin-right: 20px;
+}
+
+.to .time {
+    float: right;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 26px;
+    color: #4A4A4A;
+}
+
+.to .city {
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #4A4A4A;
+}
+
+
+.to .date {
+    float: right;
+    margin-top: 0;
+    margin-right: 5px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #646464;
+}
+
+@media (max-width: 566px) {
+    .ticket {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .left-container {
+        margin-bottom: 5%;
+    }
+
+    .left-container button {
+        width: 173px;
+        height: 63px;
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    .vertical-line {
+        width: 100%;
+        height: 1px;
+        margin-bottom: 5%;
+    }
+
+    .right-container {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .from {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .from .time {
+        font-size: 41px;
+    }
+
+    .from .city {
+        font-size: 16px;
+        margin-top: 12px;
+    }
+
+    .from .date {
+        font-size: 15px;
+        margin-top: 6px;
+    }
+
+    .flight {
+        position: inherit;
+        font-size: 12px;
+    }
+
+    .to {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .to .time {
+        font-size: 41px;
+    }
+
+    .to .city {
+        margin-top: 12px;
+        margin-right: 0;
+        font-size: 16px;
+    }
+
+    .to .date {
+        margin-top: 6px;
+        margin-right: 0;
+        font-size: 15px;
+    }
+}

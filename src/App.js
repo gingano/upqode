@@ -1,10 +1,8 @@
 import React from 'react';
-import './App.css';
-import {connect} from 'react-redux'
-import TicketsList from './TicketsList'
-import Header from './Header'
-import Menu from './Menu'
-import Footer from './Footer'
+import './styles/App.css';
+import TicketsList from './components/TicketsList'
+import Header from './components/Header'
+import Menu from './components/Menu'
 
 function App() {
   return (
@@ -15,17 +13,9 @@ function App() {
          <Menu/>
          <TicketsList/>
         </article>
-        <Footer/>
       </div>
     </div>
   );
 }
 
-const mapState = (state) => ({
-
-});
-
-const mapDispatch = (dispatch) => ({
-});
-
-export default connect(mapState, mapDispatch)(App)
+export default App

@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/Ticket.css'
 import { connect } from 'react-redux'
 
 function Ticket({ticket, currencyStatus, currencies}) {
@@ -45,6 +46,7 @@ function Ticket({ticket, currencyStatus, currencies}) {
         monthCode = 6;
         break;
     }
+
     let yearCode = (6 + +year + (Math.floor(+year/4)))%7
 
     return (+day + +monthCode + yearCode) % 7
@@ -95,6 +97,7 @@ function Ticket({ticket, currencyStatus, currencies}) {
         monthString = 'дек';
         break;
     }
+
     let dayOrder = getDayOrder(date);
     let dayName;
 
@@ -127,7 +130,7 @@ function Ticket({ticket, currencyStatus, currencies}) {
 
   const getPrice = () => {
     if (currencyStatus === 'RUB') {
-      return ticket.price + '₽'
+      return ticket.price + 'P' //ruble icon not yet supported by all browsers
     }
     if (currencyStatus === 'USD') {
       let USD = Math.round(ticket.price / currencies.rates.RUB * currencies.rates.USD)
@@ -142,9 +145,7 @@ function Ticket({ticket, currencyStatus, currencies}) {
   return (
     <div className="ticket">
       <div className="left-container">
-        <div className='logo'>
-          <img src={require('./img/Turkish-Airlines-Logo.png')} alt="" width="120px" height="35xp"/>
-        </div>
+        <div className='company-logo' />
         <button>Купить за {getPrice()}</button>
       </div>
       <div className="vertical-line"/>
@@ -163,7 +164,7 @@ function Ticket({ticket, currencyStatus, currencies}) {
             }
           </p>
           <div className="horizontal-line"/>
-          <img src={require('./img/airplane.svg')} alt=""/>
+          <img src={require('../img/airplane.svg')} alt=""/>
         </div>
         <div className="to">
           <p className="time">{ticket.arrival_time}</p>

@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    background: #F2F2F2;
+    height: 2050px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 818px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.search-container {
+    display: flex;
+    width: 100%;
+}
+
+@media (max-width: 818px) {
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
