@@ -53,6 +53,14 @@ ul li:last-child {
     outline: none;
 }
 
+.left-container button:active {
+    background: rgb(240, 94, 0);
+}
+
+.left-container button:hover {
+    cursor: pointer;
+}
+
 .vertical-line {
     background: #ECEFF1;
     width: 1px;
