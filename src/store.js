@@ -105,15 +105,11 @@ const reducer = (state, action) => {
         }
         let filteredTickets = state.filteredTickets;
 
-        filteredTickets = tickets.tickets.filter((ticket) => {
-          if (filter[0] === ticket.stops ||
+        filteredTickets = tickets.tickets.filter((ticket) => (
+            filter[0] === ticket.stops ||
             filter[1] === ticket.stops ||
             filter[2] === ticket.stops ||
-            filter[3] === ticket.stops) {
-            return true
-          }
-
-        })
+            filter[3] === ticket.stops))
 
         return {
           ...state,
@@ -177,15 +173,12 @@ const reducer = (state, action) => {
 
       let filteredTickets = state.filteredTickets;
 
-      filteredTickets = tickets.tickets.filter((ticket) => {
-        if (filter[0] === ticket.stops ||
+      filteredTickets = tickets.tickets.filter((ticket) => (
+            filter[0] === ticket.stops ||
             filter[1] === ticket.stops ||
             filter[2] === ticket.stops ||
             filter[3] === ticket.stops ||
-            filterByAll) {
-          return true
-        }
-      })
+            filterByAll))
 
       return {
         ...state,
