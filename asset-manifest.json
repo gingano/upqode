@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/upqode/static/css/main.0150d281.chunk.css",
+    "main.css": "/upqode/static/css/main.cecdf7a1.chunk.css",
     "main.js": "/upqode/static/js/main.f8db9dc7.chunk.js",
     "main.js.map": "/upqode/static/js/main.f8db9dc7.chunk.js.map",
     "runtime~main.js": "/upqode/static/js/runtime~main.37ac49f0.js",
@@ -8,9 +8,9 @@
     "static/js/2.d2802b91.chunk.js": "/upqode/static/js/2.d2802b91.chunk.js",
     "static/js/2.d2802b91.chunk.js.map": "/upqode/static/js/2.d2802b91.chunk.js.map",
     "index.html": "/upqode/index.html",
-    "precache-manifest.af7840f019acfe5e522d8c41af591b95.js": "/upqode/precache-manifest.af7840f019acfe5e522d8c41af591b95.js",
+    "precache-manifest.fc883713495fca0a59d61e7a45c11c2b.js": "/upqode/precache-manifest.fc883713495fca0a59d61e7a45c11c2b.js",
     "service-worker.js": "/upqode/service-worker.js",
-    "static/css/main.0150d281.chunk.css.map": "/upqode/static/css/main.0150d281.chunk.css.map",
+    "static/css/main.cecdf7a1.chunk.css.map": "/upqode/static/css/main.cecdf7a1.chunk.css.map",
     "static/media/airplane.svg": "/upqode/static/media/airplane.3e607416.svg",
     "static/media/Header.css": "/upqode/static/media/logo.c82fe072.svg"
   }
