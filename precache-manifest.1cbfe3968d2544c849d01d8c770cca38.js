@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "44e299525ef37527ce210ebd8f2ff35b",
+    "revision": "08091df8676c5ce694f0cf11a661309f",
     "url": "/upqode/index.html"
   },
   {
-    "revision": "2a176d14195074dcd721",
+    "revision": "f02ba838c30c01d026c2",
     "url": "/upqode/static/css/main.1207d221.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/upqode/static/js/2.937242f7.chunk.js"
   },
   {
-    "revision": "2a176d14195074dcd721",
-    "url": "/upqode/static/js/main.04944f21.chunk.js"
+    "revision": "f02ba838c30c01d026c2",
+    "url": "/upqode/static/js/main.a2814314.chunk.js"
   },
   {
     "revision": "16051403964ed8ebe920",
