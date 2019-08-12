@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/upqode/static/css/main.1207d221.chunk.css",
-    "main.js": "/upqode/static/js/main.51b59d2a.chunk.js",
-    "main.js.map": "/upqode/static/js/main.51b59d2a.chunk.js.map",
+    "main.css": "/upqode/static/css/main.0150d281.chunk.css",
+    "main.js": "/upqode/static/js/main.f8db9dc7.chunk.js",
+    "main.js.map": "/upqode/static/js/main.f8db9dc7.chunk.js.map",
     "runtime~main.js": "/upqode/static/js/runtime~main.37ac49f0.js",
     "runtime~main.js.map": "/upqode/static/js/runtime~main.37ac49f0.js.map",
-    "static/js/2.937242f7.chunk.js": "/upqode/static/js/2.937242f7.chunk.js",
-    "static/js/2.937242f7.chunk.js.map": "/upqode/static/js/2.937242f7.chunk.js.map",
+    "static/js/2.d2802b91.chunk.js": "/upqode/static/js/2.d2802b91.chunk.js",
+    "static/js/2.d2802b91.chunk.js.map": "/upqode/static/js/2.d2802b91.chunk.js.map",
     "index.html": "/upqode/index.html",
-    "precache-manifest.7f59934b3b782d14443520a1172445eb.js": "/upqode/precache-manifest.7f59934b3b782d14443520a1172445eb.js",
+    "precache-manifest.af7840f019acfe5e522d8c41af591b95.js": "/upqode/precache-manifest.af7840f019acfe5e522d8c41af591b95.js",
     "service-worker.js": "/upqode/service-worker.js",
-    "static/css/main.1207d221.chunk.css.map": "/upqode/static/css/main.1207d221.chunk.css.map",
-    "static/media/Turkish-Airlines-Logo.png": "/upqode/static/media/Turkish-Airlines-Logo.6dd5ee67.png",
+    "static/css/main.0150d281.chunk.css.map": "/upqode/static/css/main.0150d281.chunk.css.map",
     "static/media/airplane.svg": "/upqode/static/media/airplane.3e607416.svg",
-    "static/media/logo.svg": "/upqode/static/media/logo.c82fe072.svg"
+    "static/media/Header.css": "/upqode/static/media/logo.c82fe072.svg"
   }
 }
